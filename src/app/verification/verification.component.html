@@ -1,0 +1,52 @@
+<div class="container">
+    <h1 class="display-1"> Verification </h1>
+      <div>
+        <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Sr. No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Mobile No</th>
+                    <th scope="col">Email ID</th>
+                    <th scope="col">View Documents</th>
+                    <th scope="col">Verify</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">1</th>
+                    <th scope="col">Siddhesh</th>
+                    <th scope="col">8237256450</th>
+                    <th scope="col">s@gmail.com</th>
+                    <th scope="col"><button type="button" class="btn btn-primary">View</button></th>
+                    <th scope="col"><input name="userid1" type="radio" value="userid1" ngModel ></th>
+                  </tr>
+                  <tr>
+                    <th scope="col">2</th>
+                    <th scope="col">Pushkar</th>
+                    <th scope="col">8237256450</th>
+                    <th scope="col">p@gmail.com</th>
+                    <th scope="col"><button type="button" class="btn btn-primary">View</button></th>
+                    <th scope="col"><input name="userid2" type="radio" value="userid2" ngModel ></th>
+                  </tr>
+                </tbody>
+              </table>
+            <label for="verificationDate">Verification Date</label>
+            <input class="form-control" type="date" name="date" placeholder="Verification Date" ngModel>
+            <br />
+            <div class="form-group">
+                <label for="verifiedby">Verified By</label>
+                <select class="form-control" id="verifiedby" ngModel>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select >
+            </div>
+            <br/>
+            <input type="submit" value="Save" class="btn btn-primary">
+        </form>
+      </div>
+</div>
