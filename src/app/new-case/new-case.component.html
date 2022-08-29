@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="mb-3">New Case Filing</h4>
+        <form class="needs-validation" novalidate #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="orderno">Enter Judgement Order No</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required ngModel>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Enter Judgement Order Date</label>
+              <input class="form-control" type="date" name="date" placeholder="Verification Date" ngModel>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="applicant">Applicant Details</label>
+            <input type="text" class="form-control" id="applicant" name="applicant" placeholder="" value="" required ngModel>
+          </div>
+
+          <div class="mb-3">
+            <label for="respondent">Respondent Details</label>
+            <input type="text" class="form-control" id="respondent" name="respondent" placeholder="" value="" required ngModel>
+          </div>
+
+          <div class="input-group  mb-3">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile01"
+                aria-describedby="inputGroupFileAddon01" name="file" ngModel>
+            </div>
+          </div>
+
+          
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
